@@ -1,0 +1,26 @@
+/*
+ * BIBLIOTECA.c
+ *
+ *  Created on: 7 abr. 2022
+ *      Author: Hongo
+ */
+//EN EL C SE PONE EL DESARROLLO DE FUNCION
+
+#include "BIBLIOTECA.h"
+
+int funcionSumaDosEnteros(int primerNumero, int segundoNumero, int *resultado) {
+
+	*resultado = primerNumero + segundoNumero;
+	return *resultado;
+}
+///@brief Suma 2 numeros.
+///@param primerNumero trae el primer número a sumar.
+///@param segundoNumero trae el segundo número a sumar.
+///@param *resultado Te devuelve el resultado por puntero.
+///@return Retorna el resultado por medio de return.
+int funcionRestaDosEnteros(int primerNumero, int segundoNumero, int *resultado) {
+
+	*resultado = primerNumero - segundoNumero;
+	return *resultado;
+}
+

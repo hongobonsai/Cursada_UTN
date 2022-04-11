@@ -1,0 +1,29 @@
+/*
+ * BIBLIOTECA.h
+ *
+ *  Created on: 7 abr. 2022
+ *      Author: Hongo
+ */
+
+//EN EL .H SE PONEN LOS PROTOTIPOS/FIRMAS
+//se escribe en el .h la documentacion
+//ponerle UTN_getInt (por ejemplo)
+
+#ifndef BIBLIOTECA_H_
+#define BIBLIOTECA_H_
+
+///@brief Suma 2 numeros.
+///@param primerNumero trae el primer número a sumar.
+///@param segundoNumero trae el segundo número a sumar.
+///@param *resultado Te devuelve el resultado por puntero.
+///@return Retorna el resultado por medio de return.
+int funcionSumaDosEnteros(int primerNumero, int segundoNumero, int *resultado);
+///@brief Resta 2 numeros.
+///@param primerNumero trae el primer número a restar.
+///@param segundoNumero trae el segundo número a restar.
+///@param *resultado Te devuelve el resultado por puntero.
+///@return Retorna el resultado por medio de return.
+int funcionRestaDosEnteros(int primerNumero, int segundoNumero, int *resultado);
+
+
+#endif /* BIBLIOTECA_H_ */

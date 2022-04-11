@@ -1,0 +1,8 @@
+
+
+//MULTIPLICA DOS NUMEROS
+int funcionMultiplicarDosNumeros(int numero, int multiplicador, int *resultado){
+	*resultado = (numero * multiplicador);
+
+	return 0;
+}

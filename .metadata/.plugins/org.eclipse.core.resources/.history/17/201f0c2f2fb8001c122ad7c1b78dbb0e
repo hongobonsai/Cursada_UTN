@@ -1,0 +1,75 @@
+/*
+ ============================================================================
+ Name        : Ejercicio_3_4.c
+ Alumno      : Alonso Nicolás Gabriel
+
+Ejercicio 3-4:
+Realizar un programa en donde se puedan utilizar los prototipos de la función Sumar en sus 4 combinaciones.
+int Sumar1(int, int);
+int Sumar2(void);
+void Sumar3(int, int);
+void Sumar4(void);
+
+
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int Sumar1(int numeroUno, int numeroDos);
+
+int main(void) {
+		system("cls");
+		setbuf(stdout, NULL);
+
+		int primerNumero;
+		int segundoNumero;
+		int opcionMenu;
+		int resultado;
+
+		do{
+			printf("1) Utilizar la función Sumar1\n");
+			printf("2) Utilizar la función Sumar2\n");
+			printf("3) Utilizar la función Sumar3\n");
+			printf("4) Utilizar la función Sumar4\n");
+			printf("5) EXIT\n");
+			scanf("%d", &opcionMenu);
+			switch(opcionMenu){
+
+			case 1:
+				printf("Ingrese el primer número");
+				scanf("%d", &primerNumero);
+				printf("Ingrese el segundo número");
+				scanf("%d", &segundoNumero);
+				resultado = Sumar1(primerNumero, segundoNumero);
+				printf("%d", resultado);
+				break;
+
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+
+			}
+
+
+		}while(opcionMenu != 5);
+
+
+	return EXIT_SUCCESS;
+}
+
+	//FUNCIONES
+
+	int Sumar1(int numeroUno, int numeroDos){
+		int auxresultado;
+		auxresultado = numeroUno + numeroDos;
+
+		return auxresultado;
+	}
+

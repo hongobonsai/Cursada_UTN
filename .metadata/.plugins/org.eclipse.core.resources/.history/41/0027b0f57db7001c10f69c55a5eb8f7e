@@ -1,0 +1,74 @@
+/*
+ ============================================================================
+ Name        : Ejercicio_3_b.c
+ Alumno      : Alonso Nicolás Gabriel
+
+ b-Funciones
+- Limpie la pantalla
+- Asigne a las variables numero1 y numero2 los valores solicitados al usuario
+- Valide los mismos entre 10 y 100
+- Asigne a la variable operacion el valor solicitado al usuario
+- Valide el mismo 's'-sumar, 'r'-restar
+- Realice la operación de dichos valores a través de una función
+- Muestre el resultado por pantalla
+
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int funcionSumaDosEnteros(int primerNumero, int segundoNumero, int *resultado);
+int funcionRestaDosEnteros(int primerNumero, int segundoNumero, int *resultado);
+
+int main(void) {
+	system("cls");
+	setbuf(stdout, NULL);
+
+	int numeroUno;
+	int numeroDos;
+	char operacion;
+	int resultado;
+
+		do {
+			printf("Ingrese el primer número entre 10 y 100: ");
+			scanf("%d", &numeroUno);
+		} while (numeroUno < 10 || numeroUno > 100);
+
+		do {
+			printf("Ingrese el segundo número entre 10 y 100: ");
+			scanf("%d", &numeroDos);
+		} while (numeroDos < 10 || numeroDos > 100);
+
+		do {
+			fflush(stdin);
+			printf("Ingrese una operación ('s' para sumar, 'r' para restar");
+			scanf("%c", &operacion);
+		} while (operacion != 's' && operacion != 'r');
+
+		if (operacion == 's'){
+		funcionSumaDosEnteros(numeroUno, numeroDos, &resultado);
+		printf("Resultado de la suma: %d\n", resultado);
+		} else {
+		funcionRestaDosEnteros(numeroUno, numeroDos, &resultado);
+		}
+
+
+	return EXIT_SUCCESS;
+}
+
+	int funcionSumaDosEnteros(int primerNumero, int segundoNumero, int *resultado){
+
+		*resultado = primerNumero + segundoNumero;
+		return 0;
+	}
+
+	int funcionRestaDosEnteros(int primerNumero, int segundoNumero, int *resultado){
+
+			*resultado = primerNumero - segundoNumero;
+			return 0;
+		}
+
+
+
+

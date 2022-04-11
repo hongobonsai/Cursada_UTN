@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : Ejercicio_3_2.c
+ Alumno      : Alonso Nicolás Gabriel
+
+Ejercicio 3-2:
+Crear una función que muestre por pantalla el número flotante que recibe como parámetro.
+
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int getNumeroPar(int *numeroIngresado);
+
+int main(void) {
+	system("cls");
+	setbuf(stdout, NULL);
+
+
+}
+
+void printFloat(float *numeroIngresado){
+
+printf(*numeroIngresado);
+
+}

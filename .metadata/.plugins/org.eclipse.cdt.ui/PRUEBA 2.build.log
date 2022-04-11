@@ -1,0 +1,6 @@
+19:48:22 **** Incremental Build of configuration Debug for project PRUEBA 2 ****
+Info: Internal Builder is used for build
+gcc -o "PRUEBA 2.exe" "src\\PRUEBA 2.o" 
+
+19:48:23 Build Finished. 0 errors, 0 warnings. (took 219ms)
+

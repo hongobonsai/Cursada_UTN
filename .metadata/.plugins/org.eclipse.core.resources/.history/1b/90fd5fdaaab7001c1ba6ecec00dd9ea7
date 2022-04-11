@@ -1,0 +1,22 @@
+/*
+ * BIBLIOTECA.c
+ *
+ *  Created on: 7 abr. 2022
+ *      Author: Hongo
+ */
+//EN EL C SE PONE EL DESARROLLO DE FUNCION
+
+#include "BIBLIOTECA.h"
+
+int funcionSumaDosEnteros(int primerNumero, int segundoNumero, int *resultado) {
+
+	*resultado = primerNumero + segundoNumero;
+	return *resultado;
+}
+
+int funcionRestaDosEnteros(int primerNumero, int segundoNumero, int *resultado) {
+
+	*resultado = primerNumero - segundoNumero;
+	return *resultado;
+}
+

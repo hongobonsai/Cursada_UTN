@@ -1,0 +1,32 @@
+/*
+ ============================================================================
+ Name        : Ejercicio_3_1.c
+ Alumno      : Alonso Nicolás Gabriel
+
+Ejercicio 3-1:
+Crear una función que permita determinar si un número es par o no.
+La función retorna 1 en caso afirmativo y 0 en caso contrario. Probar en el main.
+
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "BIBLIOTECA.h"
+
+int main(void) {
+	system("cls");
+	setbuf(stdout, NULL);
+
+	int numeroIngresado;
+
+	int getInt(int * pNumeroIngresado,char * mensaje,char * mensajeError,
+	int maximo, int minimo, int maximoDeReintentos)
+}
+
+int GetNumeroPar(int *numeroIngresado){
+	int retorno;
+
+
+	return retorno;
+}

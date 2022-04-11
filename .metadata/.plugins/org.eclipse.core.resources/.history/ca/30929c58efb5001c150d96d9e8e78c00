@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+ Name        : Ejercicio_3_a.c
+ Alumno      : Alonso Nicolás Gabriel
+
+ a-Funciones
+ - Limpie la pantalla
+ - Asigne a la variable numero1 un valor solicitado al usuario
+ - Valide el mismo entre 10 y 100
+ - Realice un descuento del 5% a dicho valor a través de una función llamada realizarDescuento()
+ - Muestre el resultado por pantalla
+
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int funcionRealiceDescuento(int numero, int porcentajeDescuento, int *valorDescuento, int *numeroConDescuento);
+
+int main(void) {
+	system("cls");
+	setbuf(stdout, NULL);
+
+	int numeroUno;
+	int porcentajeDescuento = 0.5;
+	int valorDescuento;
+	int numeroConDescuento;
+
+	printf("NUMERO:");
+	scanf("%d", &numeroUno);
+	funcionRealiceDescuento(*numeroUno, *porcentajeDescuento, &valorDescuento, &numeroConDescuento);
+
+	printf("%d %d", valorDescuento, numeroConDescuento);
+
+	return EXIT_SUCCESS;
+}
+
+int funcionRealiceDescuento(int &numero, int &porcentajeDescuento, int *valorDescuento, int *numeroConDescuento){
+
+	*valorDescuento = 3;
+	*numeroConDescuento = 4;
+
+	return 0;
+}

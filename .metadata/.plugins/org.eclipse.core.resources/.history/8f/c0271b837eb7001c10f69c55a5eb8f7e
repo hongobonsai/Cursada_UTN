@@ -1,0 +1,22 @@
+/*
+ * BIBLIOTECA.h
+ *
+ *  Created on: 7 abr. 2022
+ *      Author: Hongo
+ */
+
+#ifndef BIBLIOTECA_H_
+#define BIBLIOTECA_H_
+
+
+
+
+EN EL .H SE PONEN LOS PROTOTIPOS/FIRMAS
+se escribe en el .h la documentacion
+ponerle UTN_getInt (por ejemplo)
+
+///@brief suma 2 numeros
+///@param este trae un int
+///@return te devuelve un loquesea
+
+#endif /* BIBLIOTECA_H_ */
